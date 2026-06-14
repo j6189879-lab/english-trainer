@@ -1,0 +1,21 @@
+{
+  "name": "english-trainer",
+  "version": "1.0.0",
+  "description": "English Input-to-Output Trainer",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node server/index.js",
+    "client": "cd client && npm run dev",
+    "setup": "npm install && cd client && npm install"
+  },
+  "dependencies": {
+    "sql.js": "^1.10.0",
+    "chokidar": "^3.6.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  }
+}
